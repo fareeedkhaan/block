@@ -1,120 +1,68 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
-            *{
-                background-color: rgb(5, 76, 85);
-            }
-            .main{
-                height: 500px;
-                width: 500px;
-                margin: auto;
-                display: flex;
-                flex-direction: column;
-                background-color: rgb(3, 43, 30);
-            }
-            .line1{
-                background-color: transparent;
-                width: 100%;
-                height: 50%;
-                display: flex;
-            }
-            .line2{
-                background-color: transparent;
-                width: 100%;
-                height: 50%;
-                display: flex;
-            }
-            .line3{
-                background-color: transparent;
-                width: 100%;
-                height: 50%;
-                display: flex;
-            }
-            .box{
-                height: 100%;
-                width: 33.33%;
-            }
-           
-        
-            .box1{
-                background-color: aquamarine;
-                border-top-left-radius: 100px;
-            }
-            
-            .box2{
-                background-color: rgb(59, 188, 145);
-                margin-left: 33.33%;
-                border-top-right-radius: 100px;
-            }
-            
-            .box3{
-                margin: auto;
-                background-color: rgb(85, 173, 144);
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-           
-            .box4{
-                background-color: rgb(23, 139, 100);
-                border-bottom-left-radius: 100px;
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navbar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #434343;
+    }
 
-            }
-            
-            .box5{
-                margin-left: 33.33%;
-                background-color: rgb(3, 75, 51);
-                border-bottom-right-radius: 100px;
-            }
-            .centre{
-                background-color: rgb(23, 65, 58);
-                width: 66.66%;
-                height: 66.66%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .centre2{
-                background-color: rgb(51, 94, 87);
-                width: 50%;
-                height: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .centre3{
-                background-color: rgb(22, 27, 26);
-                width: 50%;
-                height: 50%;
-                border-radius: 50%;
-            }
-           
-        </style>
-    </head>
-    <body>
-        <div class="main">
-            <div class="line1">
-                <div class="box box1">
-                </div>
-                <div class="box box2"></div>
-            </div>
-            <div class="line2">
-                <div class="box box3">
-                    <div class="centre">
-                        <div class="centre2">
-                            <div class="centre3"></div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="line3">
-                <div class="box box4"></div>
-                <div class="box box5"> </div>
-                </div>
-            </div>
-        </div>
-    </body>
+    .container {
+        max-width: 1600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+      background-color: #440303;
+    }
+
+    .box {
+      width: 200px;
+      text-align: center;
+      padding: 20px;
+      background: #eac7c7;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: 5px;
+    }
+
+    .box img {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 10px;
+    }
+
+    .box h2 {
+      font-size: 20px;
+      margin: 0;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box box1">
+      <img src="https://static.vecteezy.com/system/resources/previews/022/750/436/original/3d-home-icon-free-png.png" alt="Home Icon">
+      <h2>Home</h2>
+    </div>
+    <div class="box box2">
+      <img src="https://www.freeiconspng.com/thumbs/letter-i-icon-png/letter-i-icon-png-3.png" alt="About Icon">
+      <h2>About</h2>
+    </div>
+    <div class="box box3">
+      <img src="https://static.vecteezy.com/system/resources/previews/010/337/234/non_2x/gallery-illustration-3d-png.png" alt="Gallery Icon">
+      <h2>Gallery</h2>
+    </div>
+    <div class="box box4">
+      <img src="https://static.vecteezy.com/system/resources/previews/025/297/075/non_2x/contact-icon-transparent-background-ai-generative-free-png.png" alt="Contact Icon">
+      <h2>Contact</h2>
+    </div>
+  </div>
+
+</body>
 </html>
